@@ -1,0 +1,31 @@
+.dashboard-home {
+  padding: 20px;
+}
+
+.dashboard-home h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.widgets {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.widget {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.widget:hover {
+  background: #f9f9f9;
+  cursor: pointer;
+}

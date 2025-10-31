@@ -1,0 +1,22 @@
+.customer-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+.customer-card:hover {
+  transform: translateY(-4px);
+}
+.view-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.view-btn:hover {
+  background-color: #0194a6;
+}
