@@ -13,7 +13,7 @@ const LoginPopup = ({ setShowLogin, setIsAdmin }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const adminEmail = "admin@gmail.com";
+    const adminEmail = "c";
     const adminPassword = "admin123";
 
     if (currState === "Login") {

@@ -1,0 +1,118 @@
+/* Background Gradient */
+body {
+  margin: 0;
+  padding: 0;
+ 
+  font-family: "Poppins", sans-serif;
+}
+
+/* Container */
+.customer-list-container {
+     background: linear-gradient(135deg, #141e30, #243b55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Title Styling */
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #00d4ff;
+  margin: 10px auto 0;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #00d4ff;
+}
+
+/* Card container around the table */
+.table-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  width: 85%;
+  max-width: 800px;
+  transition: all 0.3s ease-in-out;
+}
+
+.table-card:hover {
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.4);
+  transform: translateY(-4px);
+}
+
+/* Table Styling */
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customer-table thead {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.customer-table th,
+.customer-table td {
+  padding: 18px 24px;
+  text-align: left;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.customer-table th {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #00d4ff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Table Row Effects */
+.customer-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.customer-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.customer-table tbody tr:hover {
+  background: rgba(0, 212, 255, 0.15);
+  transform: scale(1.01);
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .customer-table th,
+  .customer-table td {
+    padding: 12px 10px;
+    font-size: 0.9rem;
+  }
+
+  .table-card {
+    width: 100%;
+  }
+}

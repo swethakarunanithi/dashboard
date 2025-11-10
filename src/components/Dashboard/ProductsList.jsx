@@ -1,24 +1,31 @@
 import React from "react";
 import { food_list } from "../../assets/assets";
+import "./ProductList.css";
 
 const ProductsList = () => {
   return (
-    <div>
-      <h2>Products</h2>
-      <table>
-        <thead>
-          <tr><th>Name</th><th>Category</th><th>Price</th></tr>
-        </thead>
-        <tbody>
-          {food_list.map((p) => (
-            <tr key={p._id}>
-              <td>{p.name}</td>
-              <td>{p.category}</td>
-              <td>${p.price}</td>
+    <div className="products-container">
+      <h2 className="products-title">Product List</h2>
+      <div className="table-card">
+        <table className="products-table">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Price</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {food_list.map((p) => (
+              <tr key={p._id}>
+                <td>{p.name}</td>
+                <td>{p.category}</td>
+                <td>Rs.{p.price}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
